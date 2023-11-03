@@ -44,18 +44,15 @@ function get($params = [])
                         break;
                     default:
                         $this->view->response(
-                            'El producto no contiene ' . $params[':subrecurso'] . '.',
-                            404
-                        );
+                            'El producto no contiene ' . $params[':subrecurso'] . '.',404);
                         break;
                     }
                 }
                 else{
                     $this->view->response($product, 200);
                 }
-                }else{
-                    $this->view->response(
-                        'El producto con el id='.$params[':ID'].' no existe.', 404);
+                else{
+                    $this->view->response('El producto con el id='.$params[':ID'].' no existe.', 404);
                 }
             }
         }
