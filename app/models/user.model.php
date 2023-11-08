@@ -1,4 +1,4 @@
-<?php 
+<!-- <?php 
 
 require_once 'app/model/model.db.php';
 
@@ -50,4 +50,4 @@ class UserModel extends Model {
         return $user;
     }
 
-}
+} -->

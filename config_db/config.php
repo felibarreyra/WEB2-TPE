@@ -4,4 +4,4 @@ const MYSQL_USER = 'root';
     const MYSQL_DB = 'db_tpe';
     const MYSQL_HOST = 'localhost';
     const JWT_KEY = 'claveToken';
-    const JWT_EXP = 3600; // expiracion del token
+    const JWT_EXPIRE = 3600; // expiracion del token

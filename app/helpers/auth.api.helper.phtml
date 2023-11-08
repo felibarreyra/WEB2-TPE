@@ -21,7 +21,7 @@
                 'typ' => 'JWT'
             );
             
-            $payload['exp'] = time() + JWT_EXP; //valor a exprirar
+            $payload['exp'] = time() + JWT_EXPIRE; //valor a exprirar
 
             $header = base64url_encode(json_encode($header));//primero lo hago json para despues pasarlo a base64
             $payload = base64url_encode(json_encode($payload));

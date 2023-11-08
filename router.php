@@ -5,9 +5,10 @@
     $router = new Router();
 
     //defino la tabla  endpoint    verbo        controller          metodo
-    $router->addRoute('productos','GET','ProductApiController','getProducts');
-    $router->addRoute('productos','POST','ProductApiController','createProduct');
-    $router->addRoute('productos/:ID','GET','ProductApiController','getProduct');
+    $router->addRoute('productos','GET','ProductApiController','get');
+    $router->addRoute('productos','POST','ProductApiController','create');
+    $router->addRoute('productos/:ID','GET','ProductApiController','get');
+    $router->addRoute('tareas/:ID', 'PUT',    'ProductApiController', 'update');
 
 
     //rutea
